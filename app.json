@@ -1,0 +1,24 @@
+{
+    "pages": [
+        "pages/login/login",
+        "pages/index/index",
+        "pages/qr/qr",
+        "pages/busCard/busCard",
+        "pages/line/line",
+        "pages/payError/payError",
+        "pages/paySuccess/paySuccess",
+        "pages/agreement/agreement",
+        "pages/goRideCar/goRideCar",
+        "pages/pay/pay",
+        "pages/pauseUse/pauseUse",
+        "pages/question/question",
+        "pages/center/center",
+        "pages/questionDetail/questionDetail"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#28b3ee",
+        "navigationBarTitleText": "出行码",
+        "navigationBarTextStyle": "#fff"
+    }
+}

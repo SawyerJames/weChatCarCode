@@ -1,0 +1,13 @@
+<!--导入页脚  -->
+<import src="../footer-template/footerTemplate.wxml"/>
+<view class='container'>
+    <!-- 支付成功 -->
+    <view class='payPass'>
+        <icon type='success' color="#3fb3ee" size='50'></icon>
+        <text class='title'>支付成功</text>
+        <text class='price'>￥{{price}}元</text>
+        <view class='submitBtn' bindtap='goIndex'>回到首页</view>
+    </view>
+    <!-- 页脚：开通路线|个人中心 -->
+    <template is="footerTemplate"/>
+</view>

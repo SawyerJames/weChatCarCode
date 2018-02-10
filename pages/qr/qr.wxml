@@ -1,0 +1,31 @@
+<!--导入页脚  -->
+<import src="../footer-template/footerTemplate.wxml"/>
+<view class='container'>
+    <!--通知公告容器 -->
+    <view class='noticeContainer'>
+        <view class='notice_icon'>
+            <image src='/images/notice.png'></image>
+            <text>通知公告：</text>
+        </view>
+        <!--通知公告轮播 -->
+        <swiper class='noticeSwiper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+            <block wx:for="{{noticeList}}">
+                <swiper-item>
+                    <text>{{item.information_content}}</text>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <!-- 二维码 -->
+    <view class='qrContent'>
+        <text class='qrSign'>二维码对准扫码器，听到提示音即可乘车</text>
+        <image src='{{qr}}' class='qr'></image>
+        <view class='refresh' bindtap='onRefresh'>
+            <image src="/images/qrRefresh.png"></image>
+            <text>每分钟刷新一次</text>
+        </view>
+    </view>
+    <view class=''></view>
+    <!-- 页脚：开通路线|个人中心 -->
+    <template is="footerTemplate"/>
+</view>

@@ -1,0 +1,53 @@
+<!--导入页脚  -->
+<import src="../footer-template/footerTemplate.wxml"/>
+<!--index.wxml-->
+<view class="container">
+    <!--背景  -->
+    <!--通知公告容器 -->
+    <view class='noticeContainer'>
+        <view class='notice_icon'>
+            <image src='/images/notice.png'></image>
+            <text>通知公告：</text>
+        </view>
+        <!--通知公告轮播 -->
+        <swiper class='noticeSwiper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+            <block wx:for="{{noticeList}}">
+                <swiper-item>
+                    <text>{{item.information_content}}</text>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <!-- 用户信息 -->
+    <view class="userinfo">
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <text class="userinfo-nickname">
+            <!-- 根据时间段不同，问候语不同 -->
+            <text wx:if="{{greeting == 'morning'}}">早上好，{{userInfo.nickName}}</text>
+            <text wx:if="{{greeting == 'noon'}}">中午好，{{userInfo.nickName}}</text>
+            <text wx:if="{{greeting == 'afternoon'}}">下午好，{{userInfo.nickName}}</text>
+            <text wx:if="{{greeting == 'night'}}">晚上好，{{userInfo.nickName}}</text>
+        </text>
+    </view>
+    <!-- 广告位 -->
+    <view class='advertContainer'>
+        <!--广告轮播 -->
+        <swiper class='advertSwiper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="5000" duration="{{duration}}">
+            <block wx:for="{{advertList}}">
+                <swiper-item>
+                    <image src="{{item.advertisement_image}}" />
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <!-- 快速乘车 -->
+    <view bindtap='goRideCar' class='rideCarContainer'>
+        <view>
+            <image src='/images/busIcon.png' class='rideCarIcon'></image>
+            <text>快速乘车</text>
+        </view>
+        <image src='/images/arrow.png' class='arrow'></image>
+    </view>
+    <!-- 页脚：开通路线|个人中心 -->
+    <template is="footerTemplate"/>
+</view>

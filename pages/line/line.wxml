@@ -1,0 +1,31 @@
+<!--导入页脚  -->
+<import src="../footer-template/footerTemplate.wxml" />
+<view class="container">
+    <!-- 地址展示 -->
+    <view class='addressContainer'>
+        <image src='/images/address.png'></image>
+        <text>长春市</text>
+    </view>
+
+    <!-- tab切换：公交&地铁&机场大巴 -->
+    <!-- <view class='tabBtn'> -->
+    <!-- 自定义tabType参数，0机场大巴，1公交，2地铁 -->
+    <!-- 目前只开通机场大巴，如需增加，复制以下代码即可 -->
+    <!-- <view bindtap='tabChoose' data-tabType="0" class='tabBtnModel'>
+            <text>机场大巴</text>
+        </view> -->
+    <!-- </view> -->
+
+    <!-- 机场大巴 -->
+    <view wx-if="{{tabBtn == 0}}" class='busContent'>
+        <image src='/images/busImg.png' class='busImg'></image>
+        <text class='title'>机场大巴已开通</text>
+        <view wx:for="{{busRoute}}" class='busRouteContent'>
+            <text class='route'>{{item.route}}</text>
+            <text class='routeDetail'>{{item.routeDetail}}</text>
+        </view>
+    </view>
+
+    <!-- 页脚：开通路线|个人中心 -->
+    <template is="footerTemplate" />
+</view>

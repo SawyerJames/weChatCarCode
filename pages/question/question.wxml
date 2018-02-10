@@ -1,0 +1,14 @@
+<!-- 常见问题 -->
+<view class="container">
+    <!-- 问题类型,参数type传递详细页，作为详细页抛出参数 -->
+    <block wx:for="{{questionList}}">
+        <navigator url="/pages/questionDetail/questionDetail?id={{item.id}}" class="questionModel">
+            <view>
+                <image src='/images/question.png'></image>
+                <text>{{item.question}}</text>
+            </view>
+            <image src='/images/arrow_black.png'></image>
+        </navigator>
+    </block>
+    <!-- end -->
+</view>

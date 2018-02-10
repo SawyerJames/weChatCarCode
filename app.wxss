@@ -1,0 +1,12 @@
+/*reset & common css*/
+.container {
+  height: 100%;
+  display: flex;
+  font-size: 28rpx;
+  font-family: Microsoft YaHei,"微软雅黑",courier,sans-serif;
+  color: #333;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 

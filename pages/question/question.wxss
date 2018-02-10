@@ -1,0 +1,25 @@
+.questionModel{
+    width: 90%;
+    height: 100rpx;
+    background: #fff;
+    display: flex;
+    box-sizing: border-box;
+    border-bottom: 4rpx solid #ddd;
+    margin-bottom: 10rpx;
+    justify-content: space-between;
+    align-items: center;
+}
+.questionModel view{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.questionModel view image{
+    margin-right: 20rpx;
+    width: 40rpx;
+    height: 40rpx;
+}
+.questionModel>image{
+    width: 30rpx;
+    height: 30rpx;
+}

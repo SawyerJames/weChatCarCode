@@ -1,0 +1,20 @@
+.container{
+    align-items: flex-start;
+    padding: 0 5%;
+}
+/* 标题 */
+.title{
+    font-size: 34rpx;
+    font-weight: bold;
+    margin: 30rpx 0;
+    align-self: center;
+}
+/* 正文 */
+.p,.sign{
+    font-size: 28rpx;
+    margin: 10rpx 0;
+    color: #666;
+}
+.sign{
+    color: #000;
+}

@@ -1,0 +1,14 @@
+<view class="container">
+    <view bindtap='goBusCard' class="centerModel">
+        <text>乘车记录</text>
+        <image src='/images/arrow_black.png'></image>
+    </view>
+    <view bindtap="goQuestion" class="centerModel">
+        <text>常见问题</text>
+        <image src='/images/arrow_black.png'></image>
+    </view>
+    <view bindtap='goPauseUse' class="centerModel">
+        <text>暂停使用</text>
+        <image src='/images/arrow_black.png'></image>
+    </view>
+</view>

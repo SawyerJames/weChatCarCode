@@ -1,0 +1,24 @@
+page {
+    background: -webkit-gradient(linear, 0% 0%, 0% 70%, from(#28b3ee), to(#ffffff));
+}
+
+
+/* logo背景 */
+.logoBg{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 750rpx;
+}
+
+/* logo宣传语 */
+.title{
+    color: #fff;
+    font-size: 50rpx;
+    margin: 30% 0 40rpx;
+}
+
+.sign{
+    color: #fff;
+    font-size: 28rpx;
+}

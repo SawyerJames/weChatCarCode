@@ -1,0 +1,44 @@
+<!--导入页脚  -->
+<import src="../footer-template/footerTemplate.wxml"/>
+<view class="container">
+    <!-- 头部 -->
+    <view wx:if="{{payFail}}" class='header'>
+        <icon type="warn"></icon>
+        <text>支付不成功，请重新支付</text>
+    </view>
+    <!-- 主体 -->
+    <view class='content'>
+        <view class='content_header'>
+            <text>待付金额</text>
+            <text class='price'>￥{{msgContent.price}}</text>
+        </view>
+        <view class='content_middle'>
+            <view>
+                <text>商户</text>
+                <text>{{msgContent.business}}</text>
+            </view>
+            <view>
+                <text>乘车路线</text>
+                <text>{{msgContent.route}}</text>
+            </view>
+            <view>
+                <text>乘车路线</text>
+                <text>{{msgContent.time}}</text>
+            </view>
+            <view>
+                <text>支付方式</text>
+                <text>{{msgContent.type}}</text>
+            </view>
+            <view>
+                <text>商户订单</text>
+                <text>{{msgContent.order}}</text>
+            </view>
+        </view>
+    </view>
+    <!-- 立即支付 -->
+    <view bindtap='onPay' class='payBtn'>
+        <text>立即支付</text>
+    </view>
+    <!-- 页脚：开通路线|个人中心 -->
+    <template is="footerTemplate"/>
+</view>

@@ -1,0 +1,37 @@
+.btnContent{
+    width: 100%;
+    height: auto;
+    margin: 240rpx 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* 乘车图片 */
+.carIcon{
+    width: 396rpx;
+    height: 237rpx;
+    margin-bottom: 40rpx;
+}
+.sign{
+    font-size: 28rpx;
+    color: #666;
+}
+/* 开通服务 */
+.passRide{
+    width: 60%;
+    height: 80rpx;
+    background: red;
+    margin: 60rpx 0 30rpx;
+    border-radius: 8rpx;
+    color: #fff;
+    font-size: 32rpx;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAR0AAABXBAMAAADL8Iz2AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAPUExURaLK6Tqd5i6r6xnD9SO48OKX6c4AAAABdFJOU1glVgGgAAABNklEQVRo3u3T4W3EIAyGYVfqAA0TgMsAJ8EAEWH/mc4midQN8urqD+uOn48+HJGvjRMRFMdBNA+Ks/2EJzzhCU94whOe8Pw/T+JoinmMUyjZErEfTD0leT/FG2JM2bKklApmrB+vCTK3B7I7pycxcqmyFE3Pj+W8ZCFwVO+rfV+EglL6048+P1rs+JjHdA+Pb8/i+D4rJb5F6t8XAnIF1E94wvOBnkqK7qx+BqsfrVnGUMipOmD91NUPKTuun1nHZByD1F3shxEH2XsZDJHVz/R+CHs862my/ZmsfhjvVa//HdNPeMLziZ5+kGL9dFY/x+ygvOSAvZehrCLK7N5Pb5h5Se+s/Wmgdtp6LxJo9cPaHxCnHdYPKvc+9+a69vSF2E94whOe8IRneX5RnizfJE4XQRWU5Q1cyY1O7MbhiAAAAABJRU5ErkJggg==") no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.agreement{
+    font-size: 24rpx;
+    color: #28b3ee;
+}

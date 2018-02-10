@@ -1,0 +1,79 @@
+/* 日期选择 */
+
+.dateContainer {
+    width: 100%;
+    height: 120rpx;
+    background: #f2f2f2;
+    box-sizing: border-box;
+    padding: 0 5%;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #28b3ee;
+    margin-bottom: 20rpx;
+}
+.pickerContainer{
+    border: 1px solid #28b3ee;
+    color: #28b3ee;
+    padding: 4rpx 20rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    border-radius: 40rpx;
+    font-size: 24rpx;
+}
+.dateContainer .price {
+    color: #f76361;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+/* 乘车记录 */
+
+.cardList {
+    width: 90%;
+    height: 100rpx;
+    border-bottom: 1px solid #ddd;
+    padding: 10rpx 0;
+    margin-bottom: 20rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.card_header, .card_footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card_header .title {
+    color: #333;
+    font-weight: bold;
+}
+
+/* 支付与待支付的状态 */
+
+.card_header .price_noPay, .card_header .price {
+    color: #f76361;
+    font-weight: bold;
+    font-size: 32rpx;
+    font-family: sans-serif;
+}
+
+/* 已支付 */
+
+.card_header .price {
+    color: #999;
+}
+
+/* 时间与待支付文字 */
+
+.card_footer {
+    font-size: 24rpx;
+    color: #666;
+    font-family: sans-serif;
+}
+
+.card_footer .price {
+    color: #f76361;
+}

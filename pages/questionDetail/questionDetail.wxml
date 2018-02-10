@@ -1,0 +1,7 @@
+<!-- 详细问题答案页 -->
+<view class='container'>
+    <!-- 标题 -->
+    <text class='title'>{{detail.title}}</text>
+    <!-- 正文 -->
+    <text class='content'>{{detail.content}}</text>
+</view>

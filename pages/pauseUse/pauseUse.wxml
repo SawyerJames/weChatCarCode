@@ -1,0 +1,39 @@
+<!--导入页脚  -->
+<import src="../footer-template/footerTemplate.wxml"/>
+<view class="container">
+    <!-- 头部 -->
+    <view class='header'>
+        <text>腾放科技出行码服务</text>
+    </view>
+    <!-- 主体 -->
+    <view class='content'>
+        <view class='content_header'>
+            <text>当前状态</text>
+            <text>生效中</text>
+        </view>
+        <view class='content_middle'>
+            <view>
+                <text>开启时间</text>
+                <text>2018-05-02</text>
+            </view>
+            <view>
+                <text>账号名称</text>
+                <text>WANG XX</text>
+            </view>
+            <view>
+                <text>服务详情</text>
+                <text>刷二维码，即可便捷乘车机场大巴</text>
+            </view>
+        </view>
+        <view bindtap='onRecard' class='content_footer'>
+            <text>乘车记录</text>
+            <image src='/images/arrow_black.png'></image>
+        </view>
+    </view>
+    <!-- 暂停使用 -->
+    <view bindtap='onPauseUse' class='pauseBtn'>
+        <text>确定暂停使用</text>
+    </view>
+    <!-- 页脚：开通路线|个人中心 -->
+    <template is="footerTemplate"/>
+</view>

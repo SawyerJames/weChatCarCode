@@ -1,0 +1,6 @@
+<!-- 引导展示页 -->
+<view class="container">
+    <text class='title'>你走的路</text>
+    <text class='sign'>还没有我吃的大米多</text>
+    <image class='logoBg' src='/images/logoBg.png'></image>
+</view>
